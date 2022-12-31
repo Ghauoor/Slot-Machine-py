@@ -1,8 +1,38 @@
+import random
+
 MAX_LINES = 3
 MAX_BET = 100
 MIN_BET = 1
 
-#! Get the Deposite From User...
+
+ROWS = 3
+COLS = 3
+
+
+symbols_count = {
+    "A": 2,
+    "B": 4,
+    "C": 6,
+    "D": 8,
+}
+
+
+def get_slot_machine_spin(rows, cols, symbols):
+    all_symbols = []
+    for symbol, symbols_count in symbols.items():
+        for _ in range(symbols_count):
+            all_symbols.append(symbols)
+
+    columns = []
+
+    for col in range(cols):
+        columns = []
+        current_symbols = all_symbols[:]
+        for row in range(rows):
+            value = random.choice(all_symbols)
+
+
+#* Get the Deposite From User...
 def deposite():
     while True:
         amount = input("What Would You Like To Deposite? $ ")
@@ -19,7 +49,7 @@ def deposite():
     return amount
 
 
-#! Get the number of Lines...
+#* Get the number of Lines...
 def get_number_of_lines():
     while True:
         lines = input("Enter the Number of Lines to Bet on(1-" + str(MAX_LINES) + ")? ")
@@ -36,7 +66,7 @@ def get_number_of_lines():
     return lines
 
 
-#! Get the Bet
+#* Get the Bet
 
 
 def get_bet():
@@ -55,7 +85,7 @@ def get_bet():
     return amount
 
 
-#! Main Funcation
+#* Main Funcation
 def main():
     balance = deposite()
     lines = get_number_of_lines()
