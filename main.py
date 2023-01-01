@@ -21,7 +21,7 @@ def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
     for symbol, symbols_count in symbols.items():
         for _ in range(symbols_count):
-            all_symbols.append(symbols)
+            all_symbols.append(symbols)  
 
     columns = []
 
