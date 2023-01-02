@@ -35,6 +35,7 @@ def get_slot_machine_spin(rows, cols, symbols):
         columns.append(column)
 
     return columns
+    
 
 
 # * Get the Deposite From User...
