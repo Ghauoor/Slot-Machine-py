@@ -39,7 +39,7 @@ def get_slot_machine_spin(rows, cols, symbols):
     
 
 
-# * Get the Deposite From User...
+#! Get the Deposite From User...
 def deposite():
     while True:
         amount = input("What Would You Like To Deposite? $ ")
@@ -56,7 +56,7 @@ def deposite():
     return amount
 
 
-# * Get the number of Lines...
+# ! Get the number of Lines...
 def get_number_of_lines():
     while True:
         lines = input("Enter the Number of Lines to Bet on(1-" + str(MAX_LINES) + ")? ")
@@ -73,7 +73,7 @@ def get_number_of_lines():
     return lines
 
 
-# * Get the Bet
+# ! Get the Bet
 
 
 def get_bet():
@@ -92,7 +92,7 @@ def get_bet():
     return amount
 
 
-# * Main Funcation
+# ! Main Funcation
 def main():
     balance = deposite()
     lines = get_number_of_lines()
